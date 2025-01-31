@@ -23,37 +23,33 @@ def save_object(file_path, obj):
     except Exception as e:
         raise CustomException(e, sys)
     
-def evaluate_models(X_train, y_train,X_test,y_test,models,param):
-    try:
-        report = {}
 
-        for i in range(len(list(models))):
-            model = list(models.values())[i]
-            para=param[list(models.keys())[i]]
+def evaluate_models(X_train, y_train, X_test, y_test, models, params):
+    results = {}
 
-            gs = GridSearchCV(model,para,cv=3)
-            gs.fit(X_train,y_train)
+    for name, model in models.items():
+        try:
+            best_model = model  # Default to original model
+            best_params = None  # Default to no tuning
+            
+            if name in params and params[name]:  # If hyperparameters exist
+                gs = GridSearchCV(model, params[name], cv=5, scoring='accuracy', n_jobs=-1)
+                gs.fit(X_train, y_train)
+                best_model = gs.best_estimator_
+                best_params = gs.best_params_
+            else:
+                best_model.fit(X_train, y_train)
 
-            model.set_params(**gs.best_params_)
-            model.fit(X_train,y_train)
+            y_pred = best_model.predict(X_test)
+            accuracy = accuracy_score(y_test, y_pred)
 
-            #model.fit(X_train, y_train)  # Train model
+            results[name] = accuracy  # Store only accuracy in dictionary
+            print(f"{name}: {accuracy:.4f} with params: {best_params}")
 
-            y_train_pred = model.predict(X_train)
+        except Exception as e:
+            print(f"Error with model {name}: {e}")
 
-            y_test_pred = model.predict(X_test)
-
-            train_model_score = accuracy_score(y_train, y_train_pred)
-
-            test_model_score = accuracy_score(y_test, y_test_pred)
-
-            report[list(models.keys())[i]] = test_model_score
-
-        return report
-
-    except Exception as e:
-        raise CustomException(e, sys)
-    
+    return results  # Ensure we return a dict of model accuracies
 def load_object(file_path):
     try:
         with open(file_path, "rb") as file_obj:
