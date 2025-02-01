@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Heart Disease Prediction</h1>
+    <form action="/predictdata" method="post">
+        <label for="age">Age:</label>
+        <input type="number" name="age" required><br>
+
+        <label for="sex">Sex (0=Female, 1=Male):</label>
+        <input type="number" name="sex" required><br>
+
+        <label for="dataset">Dataset:</label>
+        <input type="number" name="dataset" required><br>
+
+        <label for="cp">CP:</label>
+        <input type="number" name="cp" required><br>
+
+        <label for="trestbps">Trestbps:</label>
+        <input type="number" name="trestbps" step="0.01" required><br>
+
+        <label for="chol">Chol:</label>
+        <input type="number" name="chol" step="0.01" required><br>
+
+        <label for="fbs">FBS (0 or 1):</label>
+        <input type="number" name="fbs" required><br>
+
+        <label for="restecg">RestECG:</label>
+        <input type="number" name="restecg" required><br>
+
+        <label for="thalch">Thalch:</label>
+        <input type="number" name="thalch" step="0.01" required><br>
+
+        <label for="exang">Exang (0 or 1):</label>
+        <input type="number" name="exang" required><br>
+
+        <label for="oldpeak">Oldpeak:</label>
+        <input type="number" name="oldpeak" step="0.01" required><br>
+
+        <label for="slope">Slope:</label>
+        <input type="number" name="slope" required><br>
+
+        <label for="ca">CA:</label>
+        <input type="number" name="ca" required><br>
+
+        <label for="thal">Thal:</label>
+        <input type="number" name="thal" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if results is not none %}
+        <h2>Prediction Result: {{ results }}</h2>
+    {% endif %}
+</body>
+</html>
