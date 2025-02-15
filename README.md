@@ -6,7 +6,7 @@
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Supervised-green)
 
 ## 📌 Project Overview
-This project aims to predict the likelihood of heart disease using **machine learning** techniques. It involves **Exploratory Data Analysis (EDA)**, **model building**, and a structured **ML pipeline** to ensure optimal model performance. The project is designed following best practices in **data science and MLOps**.
+This project aims to predict the severity of heart disease using **machine learning** techniques. It involves **Exploratory Data Analysis (EDA)**, **model building**, and a structured **ML pipeline** to ensure optimal model performance. The project is designed following best practices in **data science and MLOps**.
 
 ## 🔍 Features
 - **Exploratory Data Analysis (EDA)**: Understanding dataset distributions and correlations.
@@ -45,8 +45,8 @@ Heart Disease Prediction/
 ## ⚙️ Installation & Setup
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/yourusername/heart-disease-prediction.git
-cd heart-disease-prediction
+git clone https://github.com/waqas-liaqat/CardioPredict-Machine-Learning-Approach.git
+cd CardioPredict-Machine-Learning-Approach
 ```
 ### **2️⃣ Create a Virtual Environment** (Recommended)
 ```sh
@@ -84,5 +84,5 @@ This project is open-source and available under the **MIT License**.
 ## ✉️ Contact
 **Muhammad Waqas**  
 📧 waqasliaqat630@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/muhammad-waqas)
+🔗 [LinkedIn](https://www.linkedin.com/in/muhammad-waqas-liaqat/)
 
