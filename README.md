@@ -1,18 +1,19 @@
-# 🏥 Heart Disease Prediction
+# 🏥 Heart Disease Prediction Project
 
 ![Project Status](https://img.shields.io/badge/Status-In%20Development-yellow)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Flask](https://img.shields.io/badge/Flask-Framework-lightgrey)
+![Exploratory Data Analysis](https://img.shields.io/badge/Exploratory%20Data%20Analysis-Insightful-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Supervised-green)
 
 ## 📌 Project Overview
-This project is a **machine learning-based web application** that predicts the likelihood of heart disease based on patient health metrics. The model is trained on a structured dataset using various supervised learning techniques. The backend is built using **Flask**, and the application will be deployed soon.
+This project aims to predict the likelihood of heart disease using **machine learning** techniques. It involves **Exploratory Data Analysis (EDA)**, **model building**, and a structured **ML pipeline** to ensure optimal model performance. The project is designed following best practices in **data science and MLOps**.
 
 ## 🔍 Features
-- **Exploratory Data Analysis (EDA)**: Detailed insights into dataset trends and distributions.
-- **Machine Learning Model Training**: Implemented multiple models with hyperparameter tuning.
-- **Flask Web App** (Coming Soon): A user-friendly interface to input patient data and receive predictions.
-- **Logging & Exception Handling**: Robust logging to track errors and execution.
-- **Modular Pipeline**: Clean and structured code for easy modifications.
+- **Exploratory Data Analysis (EDA)**: Understanding dataset distributions and correlations.
+- **Model Training & Evaluation**: Implemented multiple ML models with hyperparameter tuning.
+- **Pipeline Structure**: Organized project with modular components.
+- **Exception Handling & Logging**: Ensuring traceability and debugging.
+- **Future Deployment Scope**: Can be extended into a web-based application.
 
 ## 📁 Project Structure
 ```
@@ -28,19 +29,15 @@ Heart Disease Prediction/
 │   │── 2. Model Training.ipynb
 │
 │── src/                 # Source code
-│   │── components/      # Custom components for training
+│   │── components/      # Custom components for ML pipeline
 │   │── pipeline/        # Machine learning pipeline
 │   │── exception.py     # Custom exception handling
 │   │── logger.py        # Logging configuration
 │   │── utils.py         # Utility functions
 │
-│── templates/           # HTML templates for Flask app
-│   │── index.html       # Home page (UI for predictions)
-│   │── home.html        # Additional UI template
-│
-│── app.py               # Flask API (To Be Deployed)
-│── requirements.txt     # Python dependencies
-│── setup.py             # Package setup file
+│── logs/                # Logs for tracking execution
+│── requirements.txt     # Dependencies
+│── setup.py             # Setup file for the project
 │── README.md            # Project documentation (this file)
 │── .gitignore           # Git ignore file
 ```
@@ -61,21 +58,17 @@ venv\Scripts\activate     # On Windows
 ```sh
 pip install -r requirements.txt
 ```
-### **4️⃣ Run the Flask App** (Coming Soon)
-```sh
-python app.py
-```
 
 ## 🏆 Model Performance
 - **Best Model:** AdaBoostClassifier
 - **Accuracy:** 66.85%
 - **ROC-AUC Score:** 0.83
 
-## 🛠 Future Updates
-- ✅ Improve class imbalance handling using SMOTE
-- ✅ Optimize hyperparameters using Bayesian Optimization
-- 🔜 Deploy Flask Web App (Coming Soon)
-- 🔜 Add API documentation using Swagger
+## 🛠 Future Improvements
+- ✅ Enhance data preprocessing
+- ✅ Optimize hyperparameters
+- 🔜 Implement deep learning-based models
+- 🔜 Add explainability using SHAP/LIME
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
