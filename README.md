@@ -1,4 +1,4 @@
-# **🏥 Heart Disease Prediction Project**
+# 🏥 **Heart Disease Prediction Project**
 
 ![Project Status](https://img.shields.io/badge/Status-In%20Development-yellow)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
