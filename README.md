@@ -18,28 +18,36 @@ This project aims to predict the severity of heart disease using **machine learn
 ## 📁 Project Structure
 ```
 Heart Disease Prediction/
-│── artifacts/            # Stores model & data artifacts
-│   │── data.csv         # Raw dataset
-│   │── model.pkl        # Trained machine learning model
-│   │── preprocessor.pkl # Data preprocessing pipeline
-│   │── train.csv, test.csv # Training & testing datasets
+│── artifacts/           
+│   │── data.csv      
+│   │── model.pkl        
+│   │── preprocessor.pkl 
+│   │── train.csv, test.csv 
 │
-│── notebook/            # Jupyter notebooks for EDA & Model Training
+│── notebook/            
 │   │── 1. EDA.ipynb
 │   │── 2. Model Training.ipynb
 │
-│── src/                 # Source code
-│   │── components/      # Custom components for ML pipeline
-│   │── pipeline/        # Machine learning pipeline
-│   │── exception.py     # Custom exception handling
-│   │── logger.py        # Logging configuration
-│   │── utils.py         # Utility functions
-│
-│── logs/                # Logs for tracking execution
-│── requirements.txt     # Dependencies
-│── setup.py             # Setup file for the project
-│── README.md            # Project documentation (this file)
-│── .gitignore           # Git ignore file
+│── src/               
+│   │── components/     
+│         │── __init__.py
+│         │── data_ingestion.py
+│         │── data_transformation.py
+│         │── model_trainer.py 
+│   │── pipeline/      
+│       │── __init__.py 
+│       │── prediction_pipeline.py     
+│       │── train_pipeline.py
+│       │── utils.py        
+│   │── __init__.py 
+│   │── exception.py    
+│   │── logger.py       
+│   │── utils.py 
+│── app.py/               
+│── requirements.txt     
+│── setup.py            
+│── README.md           
+│── .gitignore          
 ```
 
 ## ⚙️ Installation & Setup
