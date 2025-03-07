@@ -7,4 +7,5 @@ scipy
 seaborn
 xgboost
 flask
+streamlit
 -e .
