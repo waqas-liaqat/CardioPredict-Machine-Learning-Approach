@@ -7,4 +7,6 @@ scipy
 seaborn
 xgboost
 flask
+dill
+pickle
 -e .
