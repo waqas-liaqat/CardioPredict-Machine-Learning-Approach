@@ -7,5 +7,7 @@ scipy
 seaborn
 xgboost
 flask
+dill
+pickle
 streamlit
 -e .

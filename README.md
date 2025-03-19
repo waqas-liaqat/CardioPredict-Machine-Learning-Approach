@@ -1,4 +1,4 @@
-# Heart Disease Prediction
+# **CardioPredict Machine Learning Approach**
 
 ![Heart Disease Prediction](https://img.shields.io/badge/Project-Heart%20Disease%20Prediction-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
@@ -8,28 +8,27 @@ This project aims to predict the presence and severity of heart disease in patie
 
 ---
 
-## Table of Contents
+## **Table of Contents**
 
-- [Heart Disease Prediction](#heart-disease-prediction)
-  - [Table of Contents](#table-of-contents)
-  - [Project Overview](#project-overview)
-  - [Dataset](#dataset)
-    - [Dataset Features:](#dataset-features)
-  - [Project Structure](#project-structure)
-  - [Installation](#installation)
-  - [Usage](#usage)
-    - [Training the Model](#training-the-model)
-    - [Making Predictions](#making-predictions)
-  - [Model Performance](#model-performance)
-    - [Confusion Matrix](#confusion-matrix)
-    - [ROC Curve](#roc-curve)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Acknowledgements](#acknowledgements)
+- [**CardioPredict Machine Learning Approach**](#cardiopredict-machine-learning-approach)
+  - [**Table of Contents**](#table-of-contents)
+  - [**Project Overview**](#project-overview)
+  - [**Dataset**](#dataset)
+    - [**Dataset Features:**](#dataset-features)
+  - [**Project Structure**](#project-structure)
+  - [**Installation**](#installation)
+  - [**Usage**](#usage)
+    - [**Training the Model**](#training-the-model)
+    - [**Making Predictions**](#making-predictions)
+  - [**Model Performance**](#model-performance)
+    - [**Confusion Matrix**](#confusion-matrix)
+    - [**ROC Curve**](#roc-curve)
+  - [**Contributing**](#contributing)
+  - [**Acknowledgements**](#acknowledgements)
 
 ---
 
-## Project Overview
+## **Project Overview**
 
 This project involves the following key steps:
 
@@ -43,11 +42,11 @@ The best-performing model achieved an accuracy of **66.85%** using AdaBoostClass
 
 ---
 
-## Dataset
+## **Dataset**
 
 The dataset used in this project is the **Heart Disease UCI** dataset, which contains 14 attributes related to heart disease. The target variable is `num`, which indicates the severity of heart disease (0 = no disease, 1-4 = increasing severity).
 
-### Dataset Features:
+### **Dataset Features:**
 - **age**: Age of the patient.
 - **sex**: Gender of the patient (Male/Female).
 - **cp**: Chest pain type (typical angina, atypical angina, non-anginal, asymptomatic).
@@ -65,7 +64,7 @@ The dataset used in this project is the **Heart Disease UCI** dataset, which con
 
 ---
 
-## Project Structure
+## **Project Structure**
 
 The project is organized as follows:
 
@@ -105,20 +104,20 @@ Heart Disease Prediction/
 
 ---
 
-## Installation
+## **Installation**
 
 To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/heart-disease-prediction.git
+   git clone https://github.com/waqas-liaqat/CardioPredict-Machine-Learning-Approach.git
    cd heart-disease-prediction
    ```
 
 2. **Create a virtual environment** (optional but recommended):
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate
    ```
 
 3. **Install dependencies**:
@@ -138,15 +137,15 @@ To set up the project locally, follow these steps:
 
 ---
 
-## Usage
+## **Usage**
 
-### Training the Model
+### **Training the Model**
 To train the model, run the `2. Model Training.ipynb` notebook. This notebook includes:
 - Data preprocessing.
 - Model training and hyperparameter tuning.
 - Model evaluation and saving the best model.
 
-### Making Predictions
+### **Making Predictions**
 To make predictions using the trained model, run the `app.py` file:
 ```bash
 python app.py
@@ -155,21 +154,21 @@ The web application will allow you to input patient data and predict the severit
 
 ---
 
-## Model Performance
+## **Model Performance**
 
 The best-performing model was **AdaBoostClassifier** with the following results:
 - **Accuracy**: 66.85%
 - **ROC-AUC Score**: 0.8306
 
-### Confusion Matrix
-![Confusion Matrix](confusion_matrix.png)
+### **Confusion Matrix**
+![Confusion Matrix](artifacts/cnfsn_mtrx.png)
 
-### ROC Curve
-![ROC Curve](roc_curve.png)
+### **ROC Curve**
+![ROC Curve](artifacts/roc_crv.png)
 
 ---
 
-## Contributing
+## **Contributing**
 
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
@@ -183,13 +182,7 @@ Please ensure your code follows the project's coding standards and includes appr
 
 ---
 
-## License
-
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgements
+## **Acknowledgements**
 
 - **Dataset**: [Heart Disease UCI](https://archive.ics.uci.edu/ml/datasets/Heart+Disease) from the UCI Machine Learning Repository.
 - **Creators**: Hungarian Institute of Cardiology, University Hospital Zurich, University Hospital Basel, and V.A. Medical Center.
