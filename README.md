@@ -111,7 +111,7 @@ To set up the project locally, follow these steps:
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/waqas-liaqat/CardioPredict-Machine-Learning-Approach.git
-   cd heart-disease-prediction
+   cd CardioPredict-Machine-Learning-Approach
    ```
 
 2. **Create a virtual environment** (optional but recommended):
